@@ -50,8 +50,8 @@ To run this code on the PHL instead of the default generic hearing aid applicati
 
 
 ### simple-compressor.cfg
+
 ```terminal
-nchannels_in = 2
 nchannels_in = 2
 fragsize = 64
 srate = 24000 
