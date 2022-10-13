@@ -29,7 +29,7 @@ tagline: Running openMHA on the Portable Hearing Laboratory (PHL)
 description: BatAndCat PHL openMHA hearing                         # used by seo meta and the atom feed
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: 'https://github.com/BC-support'
+url: 'https://BC-support.github.io'
 
 github:
   username:  https://github.com/BC-support # change to your github username

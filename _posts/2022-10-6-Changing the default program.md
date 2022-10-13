@@ -64,20 +64,19 @@ MAHALIA_CONFIG_PREFIX=/etc/mahalia_
 ```
 
 
-## Restart and run the program
+## Restart mahalia and run the program
 
-**10**\. Physically turn the PHL OFF then back ON again to cause a bootup with the new
-configuration.
+**10**\. Restart the mahalia service with the new settings  
+<span style="color:green">mha@mahalia</span>:<span style="color:blue">/etc/mahalia_example</span>$<span style="color:red"> sudo systemctl restart mahalia</span>   
 
-**11**\. Connect the host computer to the PHL again via WiFi
 
-**12**\. From the host computer, run nc (or ncat)
+**11**\. From the host computer, run nc (or ncat)
 
 user@host:~$<span style="color:red">nc 10.0.0.1 33337</span>
 
 Hit return to verify you’re in interactive mode (should get ‘success’) 
 
-**13**\. From interactive mode, read in the new .cfg file   
+**12**\. From interactive mode, read in the new .cfg file   
 <span style="color:red">?read:/etc/mahalia/mha_configuration/simple_compressor.cfg</span>   
 Verify no errors, and start   
 <span style="color:red">cmd=start</span>      
@@ -85,9 +84,9 @@ Verify no errors. You should hear the device running.
 It’s useful to run a new program this way in the interactive mode because it shows any errors that may occur.  
 If you encounter errors or want to make changes, quit interactive mode.   
 <span style="color:red">cmd=quit</span>       
-This will take you out of interactive mode. You can edit your .cfg file on the PHL, making any necessary changes, restart interactive mode (step 12), then repeat this step.
+This will take you out of interactive mode. You can edit your .cfg file on the PHL, making any necessary changes, restart interactive mode (step 11), then repeat this step.
 
-**14**\. If everything is OK, you can have the program run automatically on startup by editing two files on the PHL.   
+**13**\. If everything is OK, you can have the program run automatically on startup by editing two files on the PHL.   
 Change the last line of the /etc/mahalia_example/config file:   
 \# openMHA settings   
 OPENMHA_INTERFACE="0.0.0.0"   
