@@ -4,7 +4,7 @@ date: 2022-11-14
 categories:
 tags: [leds]     # TAG names should always be lowercase
 ---
-This guide to controlling the LED on the PHL is courtesy of Hendrik Kaiser, who knows the PHL inside and out. The push button is also used here to switch things on and off. The basic ideas are as follows:
+This guide to controlling the LED on the PHL is courtesy of Hendrik Kayser, who knows the PHL inside and out. The push button is also used here to switch things on and off. The basic ideas are as follows:
 
 *  The LED is at '/sys/class/gpio/gpio49/value' Send a 0 or 1 here to turn it OFF or ON.   
 ```
